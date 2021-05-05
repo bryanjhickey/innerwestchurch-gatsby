@@ -33,7 +33,7 @@ export default {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: process.env.GA_TRACKING,
+        trackingId: process.env.GA_TRACKINGID,
       },
     },
     'gatsby-plugin-react-helmet',
