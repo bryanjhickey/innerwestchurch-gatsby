@@ -38,6 +38,7 @@
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-source-sanity": "^7.0.4",
     "gatsby-transformer-sharp": "^3.4.0",
+    "netlify-lambda": "^2.0.6",
     "postcss": "^8.2.13",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
