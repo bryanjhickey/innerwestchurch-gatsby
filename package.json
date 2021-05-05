@@ -1,0 +1,56 @@
+{
+  "name": "gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gatsby",
+  "author": "Bryan Hickey",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "//": "⁉️ Hey! This might look confusing but allow me to explain. The command we want to run is called gatsby build. But because we want to use es modules with gatsby, we use a package called esm. One way to require it is to set the NODE_OPTIONS environmental variable to -r esm. Finally to make this work for windows users, we use the cross-env package. Hopefully once Node es modules are stable, we can bring this back to simple gatsby build",
+    "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
+    "develop": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop",
+    "start": "npm run develop",
+    "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
+    "clean": "gatsby clean",
+    "netlify": "netlify dev"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.1.1",
+    "@heroicons/react": "^1.0.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "gatsby": "^3.4.0",
+    "gatsby-plugin-google-analytics": "^3.4.0",
+    "gatsby-plugin-image": "^1.4.0",
+    "gatsby-plugin-manifest": "^3.4.0",
+    "gatsby-plugin-postcss": "^4.4.0",
+    "gatsby-plugin-prettier-eslint": "^1.0.6",
+    "gatsby-plugin-react-helmet": "^4.4.0",
+    "gatsby-plugin-sharp": "^3.4.0",
+    "gatsby-plugin-sitemap": "^4.0.0",
+    "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-source-sanity": "^7.0.4",
+    "gatsby-transformer-sharp": "^3.4.0",
+    "postcss": "^8.2.13",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}
