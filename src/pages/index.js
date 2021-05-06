@@ -62,11 +62,14 @@ export default function HomePage({ data }) {
 export const pageQuery = graphql`
   query {
     imageSharp(id: {eq: "bdd61cdc-217c-521f-84b6-33774db1859e"}) {
-      gatsbyImageData(
-         width: 1900
-         placeholder: BLURRED
-         formats: [AUTO, WEBP, AVIF]
-       )
+      fluid(fit: COVER, maxWidth: 2100) {
+        base64
+        tracedSVG
+        srcWebp
+        srcSetWebp
+        originalImg
+        originalName
+      }
     }
   }
 `;
