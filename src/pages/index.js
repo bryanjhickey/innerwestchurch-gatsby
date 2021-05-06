@@ -29,18 +29,19 @@ const missionGoals = [
 ];
 
 export default function HomePage({ data }) {
+  const { banner } = data;
   return (
     <Layout>
-      <div className="fixed w-full bg-indigo-400 text-center">
+      {/* <div className="fixed w-full bg-indigo-400 text-center">
         <div className="block sm:hidden">Extra Small</div>
         <div className="hidden sm:block md:hidden">Small</div>
         <div className="hidden md:block lg:hidden">Medium</div>
         <div className="hidden lg:block xl:hidden">Large</div>
         <div className="hidden xl:block 2xl:hidden">Extra Large</div>
         <div className="hidden 2xl:block">2XL</div>
-      </div>
+      </div> */}
       <InfoBanner />
-      <HeroCard data={data} />
+      <HeroCard banner={banner} />
       <Podcast />
       <div className="container">
         {missionGoals.map((missionGoal) => (
@@ -59,17 +60,15 @@ export default function HomePage({ data }) {
   );
 }
 
-export const pageQuery = graphql`
-  query {
-    imageSharp(id: {eq: "bdd61cdc-217c-521f-84b6-33774db1859e"}) {
-      fluid(fit: COVER, maxWidth: 2100) {
-        base64
-        tracedSVG
-        srcWebp
-        srcSetWebp
-        originalImg
-        originalName
+export const query = graphql`
+query MyQuery {
+  banner: sanityBanner(id: {eq: "-303f4449-570e-5049-b712-7125453ac99e"}) {
+    title
+    image {
+      asset {
+         gatsbyImageData(fit: FILLMAX, placeholder: BLURRED)
       }
     }
   }
+}
 `;

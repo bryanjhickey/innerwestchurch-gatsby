@@ -1,9 +1,8 @@
 import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Logo from './Logo';
 
-export default function HeroCard({ data }) {
-  const bannerImage = getImage(data.imageSharp);
+export default function HeroCard({ banner }) {
   return (
     <>
       {/* Hero card */}
@@ -13,8 +12,8 @@ export default function HeroCard({ data }) {
           <div className="absolute inset-0">
             <GatsbyImage
               className="h-full w-full object-cover"
-              image={bannerImage}
-              alt="Alt Text"
+              image={banner.image.asset.gatsbyImageData}
+              alt={banner.title}
             />
           </div>
           <div className="relative text-white">
