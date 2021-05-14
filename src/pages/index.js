@@ -92,17 +92,5 @@ query MyQuery {
       }
     }
   }
-  stJudes: file(id: {eq: "4fcb0cfb-7093-5d0b-bcc8-6a451e5f8e74"}) {
-    id
-    publicURL
-  }
-  soma: file(id: {eq: "1b4d86fa-26d7-52d0-81f2-d0daebcdcbe0"}) {
-    id
-    publicURL
-  }
-  cityToCity: file(id: {eq: "b6fb6262-52b4-5a20-b8a7-f524cdffdff1"}) {
-    id
-    publicURL
-  }
 }
 `;
