@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // Create a order context
 const OrderContext = React.createContext();
 
+// eslint-disable-next-line react/prop-types
 export function OrderProvider({ children }) {
   // we need to stick state in here
   const [order, setOrder] = useState([]);

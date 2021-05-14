@@ -1,5 +1,7 @@
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
+
 import Logo from './Logo';
 
 export default function HeroCard({ banner }) {
@@ -21,14 +23,14 @@ export default function HeroCard({ banner }) {
               <Logo />
             </div>
             <div className="container">
-              <div className="w-full py-20 max-w-xs md:max-w-md md:py-36 lg:max-w-lg 2xl:max-w-2xl xl:py-20 2xl:py-64">
-                <h1 className="font-light text-4xl md:text-5xl lg:text-6xl">
+              <div className="w-full py-20 max-w-xs md:max-w-md md:py-36 lg:max-w-lg 2xl:max-w-2xl xl:py-20 2xl:py-72">
+                <h1 className="font-light text-4xl lg:text-5xl">
                   Everyday church for
                   everyday people
                   following Jesus in
                   everyday life
                 </h1>
-                <p className="mt-12 text-lg md:text-xl lg:text-2xl">
+                <p className="mt-12 font-light text-lg lg:text-xl">
                   Because Jesus wants to be with us in the ordinary stuff…
                   {' '}
                   <br className="hidden lg:visible" />
@@ -43,3 +45,7 @@ export default function HeroCard({ banner }) {
     </>
   );
 }
+HeroCard.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  banner: PropTypes.object.isRequired,
+};

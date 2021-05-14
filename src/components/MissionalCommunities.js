@@ -1,5 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const visions = [
   {
@@ -22,11 +23,11 @@ const visions = [
 
 ];
 
-function CommunityVision(props) {
+function CommunityVision({ title, description }) {
   return (
     <div>
-      <h4 className="text-primary font-medium mb-4">{props.title}</h4>
-      <p className="font-light text-sm">{props.description}</p>
+      <h4 className="font-medium mb-4">{title}</h4>
+      <p className="font-light text-sm">{description}</p>
     </div>
   );
 }
@@ -35,15 +36,17 @@ export default function MissionalCommunities() {
   return (
     <section className="bg-gray-100 py-20">
       <div className="container">
-        <div className="text-center max-w-2xl mx-auto">
-          <h3 className="text-primary text-5xl font-light mb-10">Missional Communities</h3>
-          <p className="font-light">
-            Inner West Church is formed around several ‘Missional Communities’.
-          </p>
-          <p className="italic font-light mt-4">Missional Communities are small groups of Christians on mission with God, depending on the Spirit, showing and sharing the gospel of Jesus in everyday life.</p>
-          <h4 className="font-medium text-primary mt-10 mb-8">
-            What are we called to be?
-          </h4>
+        <div className="grid gap-12 grid-cols-4 pb-20">
+          <div className="text-left lg:text-center col-span-4 lg:col-span-2 lg:col-start-2">
+            <h3 className="text-3xl font-light tracking-tight pb-2 sm:text-4xl border-b-2 border-primary lg:mx-auto mb-10" style={{ width: 'max-content' }}>Missional Communities</h3>
+            <p className="font-light">
+              Inner West Church is formed around several ‘Missional Communities’.
+            </p>
+            <p className="italic font-light text-gray-500 text-sm my-4 border-l-2 border-gray-900 pl-2">Missional Communities are small groups of Christians on mission with God, depending on the Spirit, showing and sharing the gospel of Jesus in everyday life.</p>
+            <h4 className="font-medium text-primary text-xl mt-9">
+              What are we called to be?
+            </h4>
+          </div>
         </div>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {visions.map((vision) => (
@@ -60,3 +63,7 @@ export default function MissionalCommunities() {
     </section>
   );
 }
+CommunityVision.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

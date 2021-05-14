@@ -9,6 +9,14 @@ export default {
   siteMetadata: {
     title: 'Inner West Church',
     siteUrl: process.env.SITE_URL,
+    titleTemplate: '%s · Everyday church for everyday people following Jesus in everyday life.',
+    description:
+      'Inner West Church is formed around several missional communities on mission with God, depending on the Spirit, showing and sharing the gospel of Jesus in everyday life',
+    url: 'https://innerwestchurch.com.au', // No trailing slash allowed!
+    image: '/images/icon.png', // Path to your image you placed in the 'static' folder
+    keywords: 'church, kensington, flemington, christian, footscray, travencore, jesus, spirit, bible, biblical, missional, missional communities, soma, city to city, anglican',
+    twitterUsername: '@innerwestchurch',
+    author: 'Inner West Church',
   },
   flags: {
     FAST_DEV: process.env.GATSBY_FAST_DEV || false,
