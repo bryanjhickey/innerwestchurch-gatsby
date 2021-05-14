@@ -10,7 +10,6 @@ function SEO({
     graphql`
     query {
       site {
-    default {
       siteMetadata {
         author
         description
@@ -21,9 +20,8 @@ function SEO({
         titleTemplate
         twitterUsername
         url
+        }
       }
-    }
-  }
     }`,
   );
 
