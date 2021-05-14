@@ -48,16 +48,18 @@ export default function HomePage({ data }) {
       <Layout>
         <InfoBanner />
         <HeroCard banner={banner} />
-        <Podcast />
         <div className="container">
-          {missionGoals.map((missionGoal) => (
-            <Mission
-              key={missionGoal.id}
-              goal={missionGoal.goal}
-              video={missionGoal.video}
-              description={missionGoal.description}
-            />
-          ))}
+          <Podcast />
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-12 py-20">
+            {missionGoals.map((missionGoal) => (
+              <Mission
+                key={missionGoal.id}
+                goal={missionGoal.goal}
+                video={missionGoal.video}
+                description={missionGoal.description}
+              />
+            ))}
+          </section>
         </div>
         <section className="py-20 text-center text-white font-light" style={{ background: 'linear-gradient(135deg, #336367 0%, #299ca6 100%)' }}>
           <CommunityPics />
