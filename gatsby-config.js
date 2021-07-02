@@ -29,14 +29,6 @@ export default {
   plugins: [
     'gatsby-plugin-postcss',
     {
-      resolve: 'gatsby-source-youtube-v3',
-      options: {
-        channelId: ['UC4bTzbezSlfP38jYV1XFnbg'],
-        apiKey: process.env.YOUTUBE_API, // Optional for public requests
-        maxVideos: 5, // Defaults to 50
-      },
-    },
-    {
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: process.env.SANITY_PROJECTID,
