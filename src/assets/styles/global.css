@@ -5,3 +5,15 @@
 a {
   @apply text-primary;
 }
+
+.prose-columns {
+  columns: 2;
+}
+.prose p:first-child {
+  @apply mt-0;
+}
+.prose p {
+  orphans: 3;
+  widows: unset;
+  @apply mb-4;
+}

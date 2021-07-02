@@ -5,9 +5,9 @@ import Logo from './Logo';
 export default function Footer() {
   return (
     <footer className="grid grid-cols-1 lg:grid-cols-3 text-white py-24 px-10" style={{ background: 'linear-gradient(135deg, #336367 0%, #299ca6 100%)' }}>
-      <div className="text-center lg:text-left">
-        <a className="text-xs text-white block hover:underline" href="tel://0405-764-276">0405 764 276</a>
-        <a className="text-xs text-white block hover:underline" href="mailto:info@innerwestchurch.com.au">info@innerwestchurch.com.au</a>
+      <div className="text-center pt-10 lg:text-left">
+        <a className="text-xs text-white block mb-1 hover:underline" href="tel://0405-764-276">0405 764 276</a>
+        <a className="text-xs text-white block mb-1 hover:underline" href="mailto:info@innerwestchurch.com.au">info@innerwestchurch.com.au</a>
       </div>
       <div className="text-center">
         <div className="w-64 mx-auto mb-10 pt-10">
