@@ -32,7 +32,7 @@ export default {
       resolve: 'gatsby-source-youtube-v3',
       options: {
         channelId: ['UC4bTzbezSlfP38jYV1XFnbg'],
-        apiKey: 'AIzaSyACJZ7_emAJbZRuCZVjbdcVI2mhh2em4n4', // Optional for public requests
+        apiKey: process.env.YOUTUBE_API, // Optional for public requests
         maxVideos: 5, // Defaults to 50
       },
     },
