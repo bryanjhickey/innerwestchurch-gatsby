@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
+// import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 export default function Leaders({ leaders }) {
   return (
@@ -30,7 +30,7 @@ export default function Leaders({ leaders }) {
               </div>
               <div>
                 <div className="text-lg mb-6">
-                  <ul className="flex justify-center space-x-5 py-6">
+                  {/* <ul className="flex justify-center space-x-5 py-6">
                     <li>
                       <a href={leader.email} className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Email</span>
@@ -49,7 +49,7 @@ export default function Leaders({ leaders }) {
                         <FaFacebook className="" />
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
                   <h3 className="font-bold text-sm mb-2">Why I love my neighbourhood.</h3>
                   <p className="text-gray-500 text-sm">{leader.bio}</p>
                 </div>
