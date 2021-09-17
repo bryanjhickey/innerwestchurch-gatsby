@@ -24,7 +24,7 @@ export default function Banner({ banner }) {
               <Logo />
             </div>
 
-            <div className="w-full py-20 max-w-xs md:max-w-md md:py-36 lg:max-w-lg 2xl:max-w-2xl xl:py-20 2xl:py-72 px-12">
+            <div className="w-full py-10 max-w-xs md:max-w-md md:py-36 lg:max-w-lg 2xl:max-w-2xl xl:py-20 2xl:py-72 px-12">
               <h1 className="font-light text-4xl lg:text-5xl">
                 {banner.title}
               </h1>
