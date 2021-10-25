@@ -21,7 +21,7 @@ export default function About() {
       <div className="grid grid-col-1 grid-row-2 lg:grid-row-1 lg:grid-cols-2 gap-12">
         <div className="row-start-2 row-span-1 lg:row-start-1 lg:col-span-1 lg:col-start-1 prose prose-indigo prose-lg text-gray-500">
           <p>
-            Our story began in 2014 when a small bunch of friends began to gather around a shared love for Jesus and for the inner west of Melbourne. Out of that grew a desire to start a church where people could learn how the message of Jesus impacts the everyday stuff of life.
+            Our story began in 2014 when a small bunch of friends began to gather around a shared love for Jesus and for the inner west of Melbourne. Out of that grew a desire to start a church where people could learn how the message of Jesus impacts the ordinary stuff of life.
           </p>
           <p>
             In 2015 that small group had grown and Inner West Church was launched in the suburb of Kensington. Over the years God has formed us into a family who are growing in love for God, each other and our neighbourhoods.
