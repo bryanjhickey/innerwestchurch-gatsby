@@ -21,10 +21,22 @@ export default function HomePage({ data }) {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Inner West Church - Everyday church for everyday life</title>
-        <link rel="canonical" href="https://localhost:8000/" />
+
+        <title>Everyday church for everyday people following Jesus in everyday life</title>
+        <meta name="title" content="Everyday church for everyday people following Jesus in everyday life" />
         <meta name="description" content="Inner West Church is a church of local people learning to follow Jesus together, on mission with God, in the everyday stuff of life." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://innerwestchurch.com.au/" />
+        <meta property="og:title" content="Everyday church for everyday people following Jesus in everyday life" />
+        <meta property="og:description" content="Inner West Church is a church of local people learning to follow Jesus together, on mission with God, in the everyday stuff of life." />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://innerwestchurch.com.au/" />
+        <meta property="twitter:title" content="Everyday church for everyday people following Jesus in everyday life" />
+        <meta property="twitter:description" content="Inner West Church is a church of local people learning to follow Jesus together, on mission with God, in the everyday stuff of life." />
+        <meta property="twitter:image" content="" />
       </Helmet>
 
       <div className="container">
