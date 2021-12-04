@@ -40,7 +40,7 @@ export default function HomePage({ data }) {
       </Helmet>
 
       <div className="container">
-        <InfoBanner title="Get to know us at our Sunday Gatherings" info="4:00pm – 26 Norwood Street Flemington (St. Stephen’s Presbyterian)" />
+        <InfoBanner title="Get to know us at our Sunday Gatherings" info="4:00pm (Vaccine Passport Service) – 26 Norwood Street Flemington (St. Stephen’s Presbyterian)" />
         <Banner banner={banner} />
         <LatestSermons />
         <About />
