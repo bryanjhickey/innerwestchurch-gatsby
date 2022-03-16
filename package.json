@@ -23,7 +23,6 @@
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.3",
-    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "gatsby": "^4.9.3",
     "gatsby-plugin-google-analytics": "^4.9.0",
