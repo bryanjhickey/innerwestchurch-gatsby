@@ -28,8 +28,8 @@
     "gatsby-plugin-google-analytics": "^4.9.0",
     "gatsby-plugin-image": "^2.9.1",
     "gatsby-plugin-manifest": "^4.9.1",
+    "gatsby-plugin-netlify": "^4.1.0",
     "gatsby-plugin-postcss": "^5.9.0",
-    "gatsby-plugin-prettier-eslint": "^1.0.6",
     "gatsby-plugin-react-helmet": "^5.9.0",
     "gatsby-plugin-sharp": "^4.9.1",
     "gatsby-plugin-sitemap": "^5.9.0",
@@ -45,6 +45,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-player": "^2.9.0",
+    "sharp": "^0.30.3",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
