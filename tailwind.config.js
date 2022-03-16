@@ -1,6 +1,6 @@
+/* eslint-disable global-require */
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     container: {
       padding: '1rem',
@@ -16,8 +16,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    '@tailwindcss/typography',
-    '@tailwindcss/forms',
-    '@tailwindcss/aspect-ratio',
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 };

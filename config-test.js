@@ -19,6 +19,7 @@ module.exports = {
   },
   flags: {
     FAST_DEV: process.env.GATSBY_FAST_DEV || false,
+    PRESERVE_WEBPACK_CACHE: process.env.GATSBY_PRESERVE_WEBPACK_CACHE || false,
     PRESERVE_FILE_DOWNLOAD_CACHE:
       process.env.GATSBY_PRESERVE_FILE_DOWNLOAD_CACHE || false,
     DEV_SSR: process.env.GATSBY_DEV_SSR || false,

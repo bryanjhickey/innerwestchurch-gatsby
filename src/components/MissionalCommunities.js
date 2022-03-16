@@ -29,11 +29,11 @@ export default function MissionalCommunities({ MissionalFocalPoints }) {
           </div>
 
           <div className="col-span-5 md:col-span-3 gap-12">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {MissionalFocalPoints.map((MissionalFocalPoint) => (
                 <div key={MissionalFocalPoint.title} className="col-span-1">
                   <CommunityVision
-                    className="col-span-1"
+                    className="col-span-2"
                     title={MissionalFocalPoint.title}
                     description={MissionalFocalPoint.description}
                   />

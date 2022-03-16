@@ -39,12 +39,10 @@ export default function HomePage({ data }) {
         <meta property="twitter:image" content="" />
       </Helmet>
 
-      <div className="container">
-        <InfoBanner title="Get to know us at our Sunday Gatherings" info="26 Norwood Street Flemington (St. Stephen’s Presbyterian)" />
-        <Banner banner={banner} />
-        <LatestSermons />
-        <About />
-      </div>
+      <InfoBanner title="Get to know us at our Sunday Gatherings" info="26 Norwood Street Flemington (St. Stephen’s Presbyterian)" />
+      <Banner banner={banner} />
+      <LatestSermons />
+      <About />
 
       <section className="py-20 text-center text-white font-light" style={{ background: 'linear-gradient(135deg, #336367 0%, #299ca6 100%)' }}>
         <div className="container">

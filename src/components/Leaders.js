@@ -5,14 +5,14 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 
 export default function Leaders({ leaders }) {
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-1">
       <div className="col-span-4 md:col-span-1 text-base max-w-prose mb-10">
         <h2 className="leading-6 text-primary font-semibold tracking-wide uppercase">Our Leaders</h2>
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           Meet the team.
         </p>
       </div>
-      <ul className="col-span-4 md:col-span-3 grid grid-cols-2 lg:grid-cols-3 gap-12">
+      <ul className="col-span-4 md:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-12">
         {leaders.map((leader) => (
           <li key={leader.id} className="col-span-1">
             <div className="space-y-2 relative">
@@ -30,7 +30,7 @@ export default function Leaders({ leaders }) {
               </div>
               <div>
                 <div className="text-lg mb-6">
-                  <h3 className="font-bold text-sm mb-2">Why I love my neighbourhood.</h3>
+                  <h3 className="font-bold text-sm my-4">Why I love my neighbourhood.</h3>
                   <p className="text-gray-500 text-sm">{leader.bio}</p>
                 </div>
               </div>
