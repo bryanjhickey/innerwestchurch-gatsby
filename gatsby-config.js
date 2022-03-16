@@ -23,7 +23,6 @@ module.exports = {
       process.env.GATSBY_PRESERVE_FILE_DOWNLOAD_CACHE || false,
     DEV_SSR: process.env.GATSBY_DEV_SSR || false,
     PARALLEL_SOURCING: process.env.GATSBY_PARALLEL_SOURCING || false,
-    FUNCTIONS: process.env.GATSBY_FUNCTIONS || false,
   },
   plugins: [
     'gatsby-plugin-postcss',
