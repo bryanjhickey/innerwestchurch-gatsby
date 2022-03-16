@@ -87,8 +87,7 @@ query MyQuery {
       image {
         asset {
             gatsbyImageData(
-              width: 500
-              aspectRatio: 1.2
+              width: 1200
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF])
         }

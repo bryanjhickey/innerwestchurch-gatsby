@@ -16,7 +16,7 @@ export default function Leaders({ leaders }) {
         {leaders.map((leader) => (
           <li key={leader.id} className="col-span-1">
             <div className="space-y-2 relative">
-              <div className="aspect-w-3 aspect-h-2 max-w-md mx-auto">
+              <div className="max-w-md mx-auto">
                 <GatsbyImage
                   className="object-cover shadow-lg rounded-lg"
                   image={leader.image.asset.gatsbyImageData}
