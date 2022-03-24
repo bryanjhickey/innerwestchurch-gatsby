@@ -81,7 +81,7 @@ export default function Footer() {
             {' '}
             <a
               className="text-white hover:underline text-center"
-              href="https://bryanjhickey.com.au"
+              href="https://www.bjh.dev/"
               target="_blank"
               rel="noopener noreferrer"
             >
