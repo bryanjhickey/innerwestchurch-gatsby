@@ -57,11 +57,11 @@ export default function Footer() {
             <p className="text-xs mb-2">
               <a
                 className="text-white font-bold hover:underline text-center after:content-['_↗']"
-                href="https://www.melbourneanglican.org.au/wp-content/uploads/2021/09/ADOM-Safe-Ministry-Policy-August-2021.pdf"
+                href="https://www.melbourneanglican.org.au/making-your-parish-child-safe/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Safe Ministry Policy
+                Safe Ministry Policies
               </a>
             </p>
             <p className="text-xs mb-10">
